@@ -14,7 +14,7 @@ const Register = () => {
   const onChange = (e) => {
     setInput({
       ...input,
-      // []의 뜻: 안에 있는 표현식을 먼저 계산해서, 그 결과를 key로 써라
+      // []의 뜻: 안에 있는 표현식을 먼저 계산해서, 그 결과를 key로 써라 (계산된 속성 이름; computed property name)
       [e.target.name]: e.target.value
     });
   };
