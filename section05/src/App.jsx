@@ -13,7 +13,8 @@ import HookExam from "./components/HookExam.jsx";
 import { useState } from "react";
 
 const Counter = () => {
-  // state의 값이 변경되면 컴포넌트가 다시 렌더링됨 (함수 재호출)
+  // state의 값이 변경되면(Object.is(prevState, nextState) 컴포넌트가 다시 렌더링됨 (함수 재호출)
+  // 단 객체, 배열등은 참조 변경이 일어나야(새로운 객체/배열을 생성) React가 감지하고 UI를 업데이트함
   // [state의 값, state의 값을 변경시키는 함수]
   const [count, setCount] = useState(0);
   console.log("counter render")
