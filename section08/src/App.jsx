@@ -1,6 +1,6 @@
-import Editor from "../components/Editor.jsx";
-import Header from "../components/Header.jsx";
-import List from "../components/List.jsx";
+import Editor from "./components/Editor.jsx";
+import Header from "./components/Header.jsx";
+import List from "./components/List.jsx";
 import {useState, useRef} from "react";
 import './App.css'
 
